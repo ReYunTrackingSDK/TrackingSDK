@@ -5,7 +5,7 @@
 //  Created by jesse on 2018/1/19.
 //  Copyright © 2018年 yun. All rights reserved.
 //
-#define REYUN_TRACKING_VERSION @"1.3.1"
+#define REYUN_TRACKING_VERSION @"1.4.0"
 #import <Foundation/Foundation.h>
 NS_ASSUME_NONNULL_BEGIN
 @interface Tracking : NSObject
@@ -19,8 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setLoginWithAccountID:(NSString *)account;
 //生成订单
 +(void)setDD:(NSString *)ryTID hbType:(NSString*)hbType hbAmount:(float)hbAmount;
-//开始付费时 调用（人民币单位是元）
-+(void)setRyzfStart:(NSString *)ryTID ryzfType:(NSString*)ryzfType hbType:(NSString*)hbType hbAmount:(float)hbAmount;
 // 支付完成，付费分析,记录玩家充值的金额（人民币单位是元）
 +(void)setRyzf:(NSString *)ryTID ryzfType:(NSString*)ryzfType hbType:(NSString*)hbType hbAmount:(float)hbAmount;
 //自定义事件

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TrackingSDK"
-  s.version      = "1.3.1"
+  s.version      = "1.4.0.1"
   s.summary      = "ReYun Tracking SDK"
   s.homepage         = "https://github.com/ReYunTrackingSDK/TrackingSDK"
 
@@ -18,6 +18,8 @@ Pod::Spec.new do |s|
   s.source_files  = 'Tracking/*.h'
 
   s.preserve_paths = 'Tracking/*.a'
+  
+  s.vendored_libraries = 'Tracking/*.a'
 
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/TrackingSDK/Tracking/**"' }
   
